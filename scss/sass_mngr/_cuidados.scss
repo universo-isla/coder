@@ -1,0 +1,84 @@
+
+.lista_cuidados {
+    margin-bottom: 2em;
+
+    .tarjeta_cuidados {
+        @extend %flextend;
+        width: 100%;
+        background-color: darken($fondo-amantes, 20%);
+        height: 300px;
+
+        .imgn-planta { 
+            /*width: 30%;*/
+            display: flex;
+        }
+        .datos_planta {
+            @extend %flextend;
+            width: 65%;
+            height: 30px;
+            vertical-align: center;
+            
+                .nombre_planta {
+                    display: flex;
+                    width: 100%;
+                    height: 25px;
+                    padding-left: 30px;
+                    margin-top: 5px;
+                    margin-bottom: 4%;
+                }
+                .info {
+                    @extend %flextend;
+                    padding-left: 5%;
+
+                        .icono {
+                            display: block;
+                            width: 30px;
+                            height: 50px;
+                            margin-left: 50px;
+                            vertical-align: center;
+                            padding-right: 5%;
+                        }
+                        .dato {
+                            display: block;
+                            width: 90%;
+                            vertical-align: center;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            padding-left: 3%;
+                        }
+
+                }
+        }    
+    }
+}
+
+/* .tarjeta_cuidados {
+    display: flex;
+    @extend %flextend;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: darken($fondo-amantes, 20%);
+    
+    
+        .imgn-planta { 
+            grid-area: 1 / 1 / 6 / 2;
+            width: 250px;
+        }
+        .nombre_planta {
+            grid-area: 1 / 2 / 2 / 4; 
+            width: 200px;
+        }
+        .icn1 { grid-area: 2 / 2 / 3 / 3; }
+        .div4 { grid-area: 2 / 3 / 3 / 4; }
+        .div5 { grid-area: 3 / 2 / 4 / 3; }
+        .div6 { grid-area: 3 / 3 / 4 / 4; }
+        .div7 { grid-area: 4 / 2 / 5 / 3; }
+        .div8 { grid-area: 4 / 3 / 5 / 4; }
+        .div9 { grid-area: 5 / 2 / 6 / 3; }
+        .div10 { grid-area: 5 / 3 / 6 / 4; }
+    
+} */
+
+    

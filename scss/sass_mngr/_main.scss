@@ -1,0 +1,116 @@
+.main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .logoybanner {
+    font-family: $tipo-amantes1;
+    font-size: 30px;
+
+    .logo_xl {
+        @extend %flextend;
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .banner {
+      
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 300px;
+      background-image: url("../multimed/fondo_parr_2.png");
+
+        .slgn {
+          text-align: center;
+          color: white;
+          word-spacing: normal;
+          padding-right: 30px;
+          padding-top: 30px;
+        }
+
+    }
+  }
+  
+  .galeria-grid-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @extend %flextend;
+    display: flex;
+    align-items: center;
+
+      .imgs-grid {
+        width: 100%;
+        @extend %flextend;
+        justify-content: space-between;
+      }
+  }
+
+  .sec_elementos {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 90px;
+    z-index: -5;    
+
+      .grid-item {
+        background-color: #caceb4; 
+        padding-left: auto;
+        padding-right: auto;
+        display: grid;
+        grid-template-rows: 1frpx 2fr;
+        justify-content: space-around;
+        text-decoration: none;
+      
+        h1 {
+          color: #f9fceb;
+          font-family: $tipo-amantes1;
+          
+          font-size: 30px;
+          padding-top: 20px;
+          text-align: center;
+          grid-row: 1 / 2;
+        }
+        .imgn_elemento {
+          flex-wrap: wrap;
+          grid-row: 2 / 2;
+          
+
+            /* animaciones */
+            .helecho_animado:hover {
+              animation: giggle 1s;
+            }
+
+            @keyframes giggle {
+              0% {
+                transform: rotate(5deg);
+              }
+              20% {
+                transform: rotate(-5deg);
+              }
+              40% {
+                transform: rotate(5deg);
+              }
+              100% {
+                transform: rotate(-5deg);
+              }
+            }
+
+        }
+
+      }
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* extends */
+.header .navbar-cont, .main .logoybanner .logo_xl, .main .galeria-grid-container, .main .galeria-grid-container .imgs-grid, .inf_legal, .lista_cuidados .tarjeta_cuidados, .lista_cuidados .tarjeta_cuidados .datos_planta, .lista_cuidados .tarjeta_cuidados .datos_planta .info {
+  display: flex;
+  flex-wrap: wrap; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body.container_own {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #D7D4C3;
+  font-family: "Cardo", serif; }
+
+/* header */
+.header {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0; }
+  .header .navbar-cont {
+    padding-top: 0;
+    background-color: #2B2E18;
+    font-family: "Cardo", serif;
+    justify-content: center; }
+    .header .navbar-cont a {
+      color: #D7D4C3;
+      text-decoration: none; }
+    .header .navbar-cont .nav-link-own {
+      display: block;
+      text-decoration: none;
+      padding: 0.5rem 1rem; }
+    .header .navbar-cont .nav-link-own:hover {
+      color: #9c987e;
+      text-decoration: underline; }
+    .header .navbar-cont .logo_s {
+      display: none; }
+
+.main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+  .main .logoybanner {
+    font-family: "Cardo", serif;
+    font-size: 30px; }
+    .main .logoybanner .logo_xl {
+      justify-content: center;
+      padding-bottom: 10px;
+      padding-top: 30px; }
+    .main .logoybanner .banner {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 300px;
+      background-image: url("../multimed/fondo_parr_2.png"); }
+      .main .logoybanner .banner .slgn {
+        text-align: center;
+        color: white;
+        word-spacing: normal;
+        padding-right: 30px;
+        padding-top: 30px; }
+  .main .galeria-grid-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; }
+    .main .galeria-grid-container .imgs-grid {
+      width: 100%;
+      justify-content: space-between; }
+  .main .sec_elementos {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 90px;
+    z-index: -5; }
+    .main .sec_elementos .grid-item {
+      background-color: #caceb4;
+      padding-left: auto;
+      padding-right: auto;
+      display: grid;
+      grid-template-rows: 1frpx 2fr;
+      justify-content: space-around;
+      text-decoration: none; }
+      .main .sec_elementos .grid-item h1 {
+        color: #f9fceb;
+        font-family: "Cardo", serif;
+        font-size: 30px;
+        padding-top: 20px;
+        text-align: center;
+        grid-row: 1 / 2; }
+      .main .sec_elementos .grid-item .imgn_elemento {
+        flex-wrap: wrap;
+        grid-row: 2 / 2;
+        /* animaciones */ }
+        .main .sec_elementos .grid-item .imgn_elemento .helecho_animado:hover {
+          animation: giggle 1s; }
+@keyframes giggle {
+  0% {
+    transform: rotate(5deg); }
+  20% {
+    transform: rotate(-5deg); }
+  40% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(-5deg); } }
+/* footer */
+.footer {
+  color: #D7D4C3;
+  padding: 10px;
+  font-family: "Cardo", serif;
+  background-color: #2B2E18;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; }
+  .footer h2 {
+    font-size: 20px; }
+  .footer .logo_ftr {
+    grid-column: 1 / 3; }
+  .footer .horarios {
+    grid-column: 2 / 3; }
+    .footer .horarios ul {
+      margin-left: 0;
+      padding-left: 0; }
+      .footer .horarios ul li {
+        list-style: none; }
+  .footer .enlaces-redes-container {
+    grid-column: 3 / 3; }
+    .footer .enlaces-redes-container a.fb {
+      text-decoration: none; }
+
+/*info legal*/
+.inf_legal {
+  font-size: 10px;
+  font-family: "Cardo", serif;
+  height: 20px;
+  justify-content: center; }
+
+/* aplicación de media query */
+@media only screen and (max-width: 578px) {
+  .main {
+    width: 100%; }
+    .main .navbar-cont {
+      justify-content: left; }
+    .main .galeria-grid-container {
+      display: none; }
+    .main .logoybanner {
+      height: 320px; }
+      .main .logoybanner .slgn {
+        font-size: 30px; }
+
+  .sec_elementos {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap; }
+
+  .footer {
+    font-size: 12px; }
+    .footer h2 {
+      font-size: 16px; }
+
+  .tarjeta_cuidados {
+    height: 700px;
+    font-size: small;
+    width: 30%; }
+    .tarjeta_cuidados .imagen-planta {
+      width: 20%; }
+
+  .info {
+    width: 60%; }
+
+  .nombre_planta {
+    width: 20%; } }
+@media only screen and (max-width: 767px) {
+  .slgn {
+    font-size: 60px; }
+
+  .logo_s {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: left;
+    padding-top: 0px;
+    /*padding-right: 300px;*/ }
+
+  .logo_xl {
+    display: none; }
+
+  .imgs-grid {
+    display: none; }
+
+  .tarjeta_cuidados {
+    height: 700px; } }
+.carousel-caption {
+  font-family: "Cardo", serif;
+  color: #D7D4C3;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .carousel-caption h2 {
+    font-size: 1.5em;
+    color: #f3f3ed;
+    text-decoration: underline; }
+  .carousel-caption p {
+    color: #f3f3ed;
+    font-size: 1em; }
+
+.lista_cuidados {
+  margin-bottom: 2em; }
+  .lista_cuidados .tarjeta_cuidados {
+    width: 100%;
+    background-color: #aea886;
+    height: 300px; }
+    .lista_cuidados .tarjeta_cuidados .imgn-planta {
+      /*width: 30%;*/
+      display: flex; }
+    .lista_cuidados .tarjeta_cuidados .datos_planta {
+      width: 65%;
+      height: 30px;
+      vertical-align: center; }
+      .lista_cuidados .tarjeta_cuidados .datos_planta .nombre_planta {
+        display: flex;
+        width: 100%;
+        height: 25px;
+        padding-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 4%; }
+      .lista_cuidados .tarjeta_cuidados .datos_planta .info {
+        padding-left: 5%; }
+        .lista_cuidados .tarjeta_cuidados .datos_planta .info .icono {
+          display: block;
+          width: 30px;
+          height: 50px;
+          margin-left: 50px;
+          vertical-align: center;
+          padding-right: 5%; }
+        .lista_cuidados .tarjeta_cuidados .datos_planta .info .dato {
+          display: block;
+          width: 90%;
+          vertical-align: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 3%; }
+
+/* .tarjeta_cuidados {
+    display: flex;
+    @extend %flextend;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: darken($fondo-amantes, 20%);
+    
+    
+        .imgn-planta { 
+            grid-area: 1 / 1 / 6 / 2;
+            width: 250px;
+        }
+        .nombre_planta {
+            grid-area: 1 / 2 / 2 / 4; 
+            width: 200px;
+        }
+        .icn1 { grid-area: 2 / 2 / 3 / 3; }
+        .div4 { grid-area: 2 / 3 / 3 / 4; }
+        .div5 { grid-area: 3 / 2 / 4 / 3; }
+        .div6 { grid-area: 3 / 3 / 4 / 4; }
+        .div7 { grid-area: 4 / 2 / 5 / 3; }
+        .div8 { grid-area: 4 / 3 / 5 / 4; }
+        .div9 { grid-area: 5 / 2 / 6 / 3; }
+        .div10 { grid-area: 5 / 3 / 6 / 4; }
+    
+} */
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+
+/* header */
+.header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
+    .navbar-cont { 
+            
+            padding-top: 0;
+            @extend %flextend;
+            background-color: $verde-amantes;
+            font-family: $tipo-amantes1;
+            justify-content: center;
+
+            
+                a {
+                    color: $fondo-amantes;
+                    text-decoration: none;
+                    
+                }
+                .nav-link-own {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                }
+                .nav-link-own:hover {
+                    color: #9c987e;
+                    text-decoration: underline;
+                  }
+
+                .navbar-expand-md .navbar-collapse .bg-light_bis {
+            
+                }
+            
+                .logo_s {
+                    display: none;
+                }
+    }
+    
+}

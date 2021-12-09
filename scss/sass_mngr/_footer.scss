@@ -1,0 +1,44 @@
+/* footer */
+
+.footer {
+    color: $fondo-amantes;
+    padding: 10px;
+    font-family: $tipo-amantes1;
+    background-color: $verde-amantes;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    h2 {
+      font-size: 20px;
+    }
+    .logo_ftr {
+        grid-column: 1 / 3;
+      }
+
+    .horarios {
+        grid-column: 2 / 3;
+
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+          li {
+            list-style: none;
+          }
+        }
+    }
+    .enlaces-redes-container {
+        grid-column: 3 / 3;
+
+        a.fb {
+            text-decoration: none;
+          
+          }
+    }
+}
+  /*info legal*/
+  .inf_legal {
+    font-size: 10px;
+    font-family: $tipo-amantes1;
+    height: 20px;
+    @extend %flextend;
+    justify-content: center;
+  }
