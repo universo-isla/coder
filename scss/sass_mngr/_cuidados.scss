@@ -3,16 +3,37 @@
     margin-bottom: 2em;
     background-color: darken($fondo-amantes, 20%);
 
+
     .tarjeta_cuidados {
         @extend %flextend;
         width: 100%;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         margin-top: 10px;
+        border-bottom: 2px;
+        border-color: $verde-amantes;
+        
+        .nombre_planta {
+            display: flex;
+            width: 100%;
+            padding-left: 35%;
 
+            h1 {
+                font-size: 2em;
+                padding-bottom: 3px;
+                margin-top: 5px;
+            }
+            h2 {
+                font-size: 1.4em;
+                padding-bottom: 3px;
+                margin-top: 5px;
+            }
+        }
         .imgn-planta { 
             width: 30%;
             display: flex;
             padding: 10px;
+            
 
             .foto_planta {
                 width: 100%;
@@ -23,24 +44,16 @@
             @extend %flextend;
             width: 70%;
             height: 30px;
-            vertical-align: center;
-            
-                .nombre_planta {
-                    display: flex;
-                    width: 100%;
-                    height: 25px;
-                    padding-left: 30px;
-                    margin-top: 5px;
-                    margin-bottom: 4%;
-                }
+                
                 .info {
                     @extend %flextend;
                     padding-left: 5%;
+                    vertical-align: center;
 
                         .icono {
                             display: block;
                             width: 30px;
-                            height: 50px;
+                            height: 30px;
                             margin-left: 50px;
                             vertical-align: center;
                             padding-right: 5%;
@@ -57,13 +70,7 @@
                 }
         }    
     }
-    hr {
-        color: $verde-amantes;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-width: 5px;
-        width: 100%;
-    }
+
 
 
 }

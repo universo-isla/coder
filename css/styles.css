@@ -214,7 +214,22 @@ body.container_own {
   .lista_cuidados .tarjeta_cuidados {
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 10px; }
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 2px;
+    border-color: #2B2E18; }
+    .lista_cuidados .tarjeta_cuidados .nombre_planta {
+      display: flex;
+      width: 100%;
+      padding-left: 35%; }
+      .lista_cuidados .tarjeta_cuidados .nombre_planta h1 {
+        font-size: 2em;
+        padding-bottom: 3px;
+        margin-top: 5px; }
+      .lista_cuidados .tarjeta_cuidados .nombre_planta h2 {
+        font-size: 1.4em;
+        padding-bottom: 3px;
+        margin-top: 5px; }
     .lista_cuidados .tarjeta_cuidados .imgn-planta {
       width: 30%;
       display: flex;
@@ -223,21 +238,14 @@ body.container_own {
         width: 100%; }
     .lista_cuidados .tarjeta_cuidados .datos_planta {
       width: 70%;
-      height: 30px;
-      vertical-align: center; }
-      .lista_cuidados .tarjeta_cuidados .datos_planta .nombre_planta {
-        display: flex;
-        width: 100%;
-        height: 25px;
-        padding-left: 30px;
-        margin-top: 5px;
-        margin-bottom: 4%; }
+      height: 30px; }
       .lista_cuidados .tarjeta_cuidados .datos_planta .info {
-        padding-left: 5%; }
+        padding-left: 5%;
+        vertical-align: center; }
         .lista_cuidados .tarjeta_cuidados .datos_planta .info .icono {
           display: block;
           width: 30px;
-          height: 50px;
+          height: 30px;
           margin-left: 50px;
           vertical-align: center;
           padding-right: 5%; }
@@ -248,11 +256,5 @@ body.container_own {
           padding-top: 5px;
           padding-bottom: 5px;
           padding-left: 3%; }
-  .lista_cuidados hr {
-    color: #2B2E18;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-width: 5px;
-    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
