@@ -116,7 +116,7 @@ body.container_own {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; }
   .footer h2 {
-    font-size: 20px; }
+    font-size: 1.5em; }
   .footer .logo_ftr {
     grid-column: 1 / 3; }
   .footer .horarios {
@@ -128,8 +128,12 @@ body.container_own {
         list-style: none; }
   .footer .enlaces-redes-container {
     grid-column: 3 / 3; }
-    .footer .enlaces-redes-container a.fb {
-      text-decoration: none; }
+    .footer .enlaces-redes-container a {
+      text-decoration: none;
+      padding-right: 3px;
+      padding-left: 5px; }
+      .footer .enlaces-redes-container a .fb .ig {
+        width: 30px; }
 
 /*info legal*/
 .inf_legal {
@@ -205,16 +209,20 @@ body.container_own {
     font-size: 1em; }
 
 .lista_cuidados {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  background-color: #aea886; }
   .lista_cuidados .tarjeta_cuidados {
     width: 100%;
-    background-color: #aea886;
-    height: 300px; }
+    margin-bottom: 10px;
+    margin-top: 10px; }
     .lista_cuidados .tarjeta_cuidados .imgn-planta {
-      /*width: 30%;*/
-      display: flex; }
+      width: 30%;
+      display: flex;
+      padding: 10px; }
+      .lista_cuidados .tarjeta_cuidados .imgn-planta .foto_planta {
+        width: 100%; }
     .lista_cuidados .tarjeta_cuidados .datos_planta {
-      width: 65%;
+      width: 70%;
       height: 30px;
       vertical-align: center; }
       .lista_cuidados .tarjeta_cuidados .datos_planta .nombre_planta {
@@ -240,34 +248,11 @@ body.container_own {
           padding-top: 5px;
           padding-bottom: 5px;
           padding-left: 3%; }
-
-/* .tarjeta_cuidados {
-    display: flex;
-    @extend %flextend;
-    /*grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: darken($fondo-amantes, 20%);
-    
-    
-        .imgn-planta { 
-            grid-area: 1 / 1 / 6 / 2;
-            width: 250px;
-        }
-        .nombre_planta {
-            grid-area: 1 / 2 / 2 / 4; 
-            width: 200px;
-        }
-        .icn1 { grid-area: 2 / 2 / 3 / 3; }
-        .div4 { grid-area: 2 / 3 / 3 / 4; }
-        .div5 { grid-area: 3 / 2 / 4 / 3; }
-        .div6 { grid-area: 3 / 3 / 4 / 4; }
-        .div7 { grid-area: 4 / 2 / 5 / 3; }
-        .div8 { grid-area: 4 / 3 / 5 / 4; }
-        .div9 { grid-area: 5 / 2 / 6 / 3; }
-        .div10 { grid-area: 5 / 3 / 6 / 4; }
-    
-} */
+  .lista_cuidados hr {
+    color: #2B2E18;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 5px;
+    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
