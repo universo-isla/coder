@@ -135,6 +135,12 @@ body.container_own {
       .footer .enlaces-redes-container a .fb .ig {
         width: 30px; }
 
+.icn_red {
+  width: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 /*info legal*/
 .inf_legal {
   font-size: 10px;
