@@ -119,6 +119,8 @@ body.container_own {
     font-size: 1.5em; }
   .footer .logo_ftr {
     grid-column: 1 / 3; }
+    .footer .logo_ftr img {
+      width: 60px; }
   .footer .horarios {
     grid-column: 2 / 3; }
     .footer .horarios ul {
@@ -132,14 +134,8 @@ body.container_own {
       text-decoration: none;
       padding-right: 3px;
       padding-left: 5px; }
-      .footer .enlaces-redes-container a .fb .ig {
+      .footer .enlaces-redes-container a img {
         width: 30px; }
-
-.icn_red {
-  width: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
 
 /*info legal*/
 .inf_legal {
