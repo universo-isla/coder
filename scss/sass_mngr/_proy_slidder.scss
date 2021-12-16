@@ -1,15 +1,23 @@
-.carousel-caption {
-    font-family: $tipo-amantes1;
-    color: $fondo-amantes;
-    background-color: rgba(0, 0, 0, 20%);
 
-        h2 {
-            font-size: 1.5em;
-            color: rgb(243, 243, 237);
+        .h1_proy {
+            color: $verde-amantes;
             text-decoration: underline;
+            
         }
-        p {
-            color: rgb(243, 243, 237);
-            font-size: 1em;
-        }
-}
+
+            .carousel-caption {
+                font-family: $tipo-amantes1;
+                color: $fondo-amantes;
+                background-color: rgba(0, 0, 0, 20%);
+                
+                    
+                    h2 {
+                        font-size: 1.5em;
+                        color: rgb(243, 243, 237);
+                        text-decoration: underline;
+                    }
+                    p {
+                        color: rgb(243, 243, 237);
+                        font-size: 1em;
+                    }
+            }

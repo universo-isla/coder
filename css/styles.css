@@ -20,7 +20,8 @@ body.container_own {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
   .header .navbar-cont {
     padding-top: 0;
     background-color: #2B2E18;
@@ -198,6 +199,10 @@ body.container_own {
 
   .tarjeta_cuidados {
     height: 700px; } }
+.h1_proy {
+  color: #2B2E18;
+  text-decoration: underline; }
+
 .carousel-caption {
   font-family: "Cardo", serif;
   color: #D7D4C3;
