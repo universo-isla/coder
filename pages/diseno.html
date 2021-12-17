@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link hoja de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- corrección a la ruta href de la hoja de estilos para las páginas dentro de carpeta page, se agregó ../ para que se pudiera acceder a ella -->
+    <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,16 +45,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link, nav-link-own" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link, nav-link-own" aria-current="page" href=".../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link, nav-link-own" href="elementos.html">Elementos</a>
+                            <a class="nav-link, nav-link-own" href="../pages/elementos.html">Elementos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link, nav-link-own" href="pages/proyectos.html">Proyectos</a>
+                            <a class="nav-link, nav-link-own" href="../pages/proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link, nav-link-own" href="pages/contacto.html">Cuidados plantas</a>
+                        <a class="nav-link, nav-link-own" href="../pages/cuidados-plantas.html">Cuidados plantas</a>
                         </li>
                         </ul>
                     </div>
@@ -65,51 +67,20 @@
     <div class= "logoybanner">
         <div class="logo_xl">
             <a href="index.html">
-                <img src="multimed/logo_amantes_verdes.png" alt="Logo Amantes Verdes">
+                <img src="../multimed/logo_amantes_verdes.png" alt="Logo Amantes Verdes">
             </a>
         </div>
-        <div class="banner">
-            <div class="slgn">
-                <!-- SEO - inclusión de h1 -->
-                <h1>Creando espacios vivos</h1>
-            </div>
+        <div class="tituloPag">
+            <h1>Página en construcción</h1>
         </div>
-    </div>
+        <a href="index.html">ir a inicio</a>
 
-    <section class="sec_elementos">
-        <a class="grid-item" href="pages/plantas.html">
-            <div class="nom_elem">
-            <h1>Plantas</h1>
-            </div>
-            <!--Elemento animado-->
-            <div class="imgn_elemento">
-                <img class="helecho_animado" src="multimed/amantes_helecho_antiquum.png" alt="Helecho Antiquum" width="100%">
-            </div>
-        </a>
-        <a class="grid-item" href="pages/elementos_diseno.html">
-            <div class="nom_elem">
-                <h1>Diseño</h1>
-                </div>
-                <!--Elemento animado-->
-                <div class="imgn_elemento">
-                    <img class="helecho_animado" src="multimed/maceta_low_v3.png" alt="Helecho Antiquum" width="100%">
-                </div>
-        </a>
-        <a class="grid-item" href="pages/jardineria.html">
-            <div class="nom_elem">
-                <h1>Jardinería</h1>
-                </div>
-                <!--Elemento animado-->
-                <div class="imgn_elemento">
-                    <img class="helecho_animado" src="multimed/regador_v2.png" alt="Helecho Antiquum" width="100%">
-                </div>
-        </a>
-    </section>
+
 
 </section>
     <div class="footer">
         <div class= "logo_ftr">
-            <img src="multimed/Logo_amantes_ftr_beige_s.png" alt="Logo Amantes Verdes" width="60px">
+            <img src="../multimed/Logo_amantes_ftr_beige_s.png" alt="Logo Amantes Verdes" width="60px">
         </div>
         <div class="horarios">
             <h2>Horarios en tienda</h2>
@@ -121,10 +92,10 @@
         <div class="enlaces-redes-container">
             <h2>Síguenos en redes</h2>
             <a class="fb" href="https://www.facebook.com/Amantes-Verdes-100624208895637">
-                <img src="multimed/btn_fb_amantes.png" alt="Facebook Amantes Verdes" width="30px">
+                <img src="../multimed/btn_fb_amantes.png" alt="Facebook Amantes Verdes" width="30px">
             </a>
             <a class="ig" href="https://www.instagram.com/amantesverdes/">
-                <img src="multimed/btn_IG_amantes.png" alt="Instagram Amantes Verdes" width="30px">
+                <img src="../multimed/btn_IG_amantes.png" alt="Instagram Amantes Verdes" width="30px">
             </a>  
         </div>   
     </div>
