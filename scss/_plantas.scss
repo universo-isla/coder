@@ -1,0 +1,52 @@
+.sec_catalogo_plantas {
+    font-family: $tipo-amantes1;
+    @extend %flextend; /* display flexbox + flex: wrap */
+    width: 100%;
+
+        .ficha_productos {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 28%;
+            margin: 5px;
+            background-color: darken($fondo-amantes, 20%);
+            text-align: center;
+            
+            
+            h2{
+                font-size: 1.2em;
+                text-decoration: underline;
+                
+                width: 100%;
+            }
+            p {
+                font-size: .8em;
+            }
+           
+            .price {
+                color: $fondo-amantes;
+                font-size: .8em;
+                text-align: center;
+                width: 100%;
+              }
+              button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: $verde-amantes;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              button:hover {
+                opacity: 0.7;
+              }
+        }
+          
+          
+          
+          
+          
+          
+    
+}
