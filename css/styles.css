@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* extends */
-.header .navbar-cont, .main .logoybanner .logo_xl, .main .galeria-grid-container, .main .galeria-grid-container .imgs-grid, .inf_legal, .lista_cuidados .tarjeta_cuidados, .lista_cuidados .tarjeta_cuidados .datos_planta, .lista_cuidados .tarjeta_cuidados .datos_planta .info, .sec_catalogo_plantas .ficha_productos, .nosotros {
+.header .navbar-cont, .main .logoybanner .logo_xl, .main .galeria-grid-container, .main .galeria-grid-container .imgs-grid, .inf_legal, .lista_cuidados .tarjeta_cuidados, .lista_cuidados .tarjeta_cuidados .datos_planta, .lista_cuidados .tarjeta_cuidados .datos_planta .info, .sec_catalogo_plantas, .nosotros {
   display: flex;
   flex-wrap: wrap; }
 
@@ -266,10 +266,11 @@ body.container_own {
 
 .sec_catalogo_plantas {
   font-family: "Cardo", serif;
+  /* display flexbox + flex: wrap */
   width: 100%; }
   .sec_catalogo_plantas .ficha_productos {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 35%;
+    max-width: 28%;
     margin: 5px;
     background-color: #aea886;
     text-align: center; }
@@ -278,7 +279,7 @@ body.container_own {
       text-decoration: underline;
       width: 100%; }
     .sec_catalogo_plantas .ficha_productos p {
-      font-size: .6em; }
+      font-size: .8em; }
     .sec_catalogo_plantas .ficha_productos .price {
       color: #D7D4C3;
       font-size: .8em;
