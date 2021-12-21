@@ -67,8 +67,16 @@
     .imgs-grid {
         display: none;
     }
-.tarjeta_cuidados {
-    height: 700px;
-}
+    .tarjeta_cuidados {
+        height: 700px;
+    }
 
 }
+
+/* plantas */
+
+@media only screen and (max-width: 578px) {
+    .main .logoybanner {
+        height: 199px;
+    }
+} 

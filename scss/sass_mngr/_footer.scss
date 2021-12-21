@@ -3,6 +3,7 @@
 .footer {
     color: $fondo-amantes;
     padding: 10px;
+    width: 100%;
     font-family: $tipo-amantes1;
     background-color: $verde-amantes;
     display: grid;
@@ -43,12 +44,14 @@
         } 
         
     }
+     
 }
-  /*info legal*/
-  .inf_legal {
-    font-size: 10px;
-    font-family: $tipo-amantes1;
-    height: 20px;
-    @extend %flextend;
-    justify-content: center;
-  }
+ /*info legal*/
+.inf_legal {
+  font-size: 10px;
+  font-family: $tipo-amantes1;
+  height: 23px;
+  justify-content: center;
+  padding-top: 2px;
+  display: flex;
+}

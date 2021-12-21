@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* extends */
-.header .navbar-cont, .main .logoybanner .logo_xl, .main .galeria-grid-container, .main .galeria-grid-container .imgs-grid, .inf_legal, .lista_cuidados .tarjeta_cuidados, .lista_cuidados .tarjeta_cuidados .datos_planta, .lista_cuidados .tarjeta_cuidados .datos_planta .info, .sec_catalogo_plantas, .nosotros {
+.header .navbar-cont, .main .logoybanner .logo_xl, .main .galeria-grid-container, .main .galeria-grid-container .imgs-grid, .lista_cuidados .tarjeta_cuidados, .lista_cuidados .tarjeta_cuidados .datos_planta, .lista_cuidados .tarjeta_cuidados .datos_planta .info, .nosotros {
   display: flex;
   flex-wrap: wrap; }
 
@@ -112,6 +112,7 @@ body.container_own {
 .footer {
   color: #D7D4C3;
   padding: 10px;
+  width: 100%;
   font-family: "Cardo", serif;
   background-color: #2B2E18;
   display: grid;
@@ -142,8 +143,10 @@ body.container_own {
 .inf_legal {
   font-size: 10px;
   font-family: "Cardo", serif;
-  height: 20px;
-  justify-content: center; }
+  height: 23px;
+  justify-content: center;
+  padding-top: 2px;
+  display: flex; }
 
 /* aplicación de media query */
 @media only screen and (max-width: 578px) {
@@ -199,6 +202,10 @@ body.container_own {
 
   .tarjeta_cuidados {
     height: 700px; } }
+/* plantas */
+@media only screen and (max-width: 578px) {
+  .main .logoybanner {
+    height: 199px; } }
 .h1_proy {
   color: #2B2E18;
   text-decoration: underline; }
@@ -264,40 +271,70 @@ body.container_own {
           padding-bottom: 5px;
           padding-left: 3%; }
 
-.sec_catalogo_plantas {
-  font-family: "Cardo", serif;
-  /* display flexbox + flex: wrap */
-  width: 100%; }
-  .sec_catalogo_plantas .ficha_productos {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 28%;
-    margin: 5px;
-    background-color: #aea886;
-    text-align: center; }
-    .sec_catalogo_plantas .ficha_productos h2 {
+.row {
+  margin-bottom: 1.5em; }
+  .row .col .card_own {
+    background-color: #c3bea4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.25rem; }
+    .row .col .card_own h2 {
       font-size: 1.2em;
-      text-decoration: underline;
-      width: 100%; }
-    .sec_catalogo_plantas .ficha_productos p {
-      font-size: .8em; }
-    .sec_catalogo_plantas .ficha_productos .price {
-      color: #D7D4C3;
-      font-size: .8em;
-      text-align: center;
-      width: 100%; }
-    .sec_catalogo_plantas .ficha_productos button {
-      border: none;
-      outline: 0;
-      padding: 12px;
-      color: white;
-      background-color: #2B2E18;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-      font-size: 18px; }
-    .sec_catalogo_plantas .ficha_productos button:hover {
-      opacity: 0.7; }
+      text-decoration: underline; }
 
+/* 
+.sec_catalogo_plantas {
+    font-family: $tipo-amantes1;
+    @extend %flextend; 
+    width: 100%;
+
+        .ficha_productos {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 28%;
+            margin: 5px;
+            background-color: darken($fondo-amantes, 20%);
+            text-align: center;
+            
+            
+            h2{
+                font-size: 1.2em;
+                text-decoration: underline;
+                
+                width: 100%;
+            }
+            p {
+                font-size: .8em;
+            }
+           
+            .price {
+                color: $fondo-amantes;
+                font-size: .8em;
+                text-align: center;
+                width: 100%;
+              }
+              button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: $verde-amantes;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              button:hover {
+                opacity: 0.7;
+              }
+        }
+    
+    
+} */
 .nosotros {
   margin-bottom: 2em;
   margin-top: 1em; }

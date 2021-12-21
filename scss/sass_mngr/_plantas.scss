@@ -1,6 +1,32 @@
+.row {
+  margin-bottom: 1.5em;
+    
+  .col {
+    
+    .card_own {
+      background-color: darken($fondo-amantes, 10%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-clip: border-box;
+      border: none;
+      border-radius: 0.25rem;
+
+        h2 {
+          font-size: 1.2em;
+          text-decoration: underline;
+        }
+      }
+  }
+}
+
+
+/* 
 .sec_catalogo_plantas {
     font-family: $tipo-amantes1;
-    @extend %flextend; /* display flexbox + flex: wrap */
+    @extend %flextend; 
     width: 100%;
 
         .ficha_productos {
@@ -42,11 +68,6 @@
                 opacity: 0.7;
               }
         }
-          
-          
-          
-          
-          
-          
     
-}
+    
+} */
