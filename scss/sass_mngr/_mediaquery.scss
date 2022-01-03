@@ -15,16 +15,16 @@
                 .slgn {
                     font-size: 30px;
                 }
-        
             }
         }
-        .
+
     
     .sec_elementos {
         margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
     }
+
     .footer {
         font-size: 12px;
 
@@ -33,22 +33,26 @@
           }
     }
     .tarjeta_cuidados {
-        height: 700px;
         font-size: small;
-        width: 30%;
 
-            /*.imagen-planta {
-                width: 20%
-            } */
-    }
-    .info {
-       width: 40%; 
+            .datos_planta {
+                width: 70%;
+                .info {
+                    width: 100%; 
+             
+                    .icono {
+                     width: 15px; 
+                     }
+                 }
+            }
+        .imgn-planta {
+            width: 15%;
+        }
+            
     }
     .nombre_planta {
         width: 20%;
     }
-    
-
 }
     
 @media only screen and (max-width: 767px) {
@@ -69,15 +73,5 @@
     .imgs-grid {
         display: none;
     }
-    .tarjeta_cuidados {
-
-        
-    }
 
 }
-
-/* plantas */
-
-@media only screen and (max-width: 578px) {
-
-} 

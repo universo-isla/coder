@@ -9,5 +9,16 @@
         margin-right: 0;
         background-color: $fondo-amantes;
         font-family: $tipo-amantes1;
+
+        .btn-trs{
+            font-family: $tipo-amantes1;
+            color: $verde-amantes;
+            text-decoration: none;
+
+            &:hover {
+                color: darken($verde-amantes, 20%);
+                text-decoration: underline;
+            }
+        }
       }
 
