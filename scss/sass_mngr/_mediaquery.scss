@@ -11,13 +11,14 @@
             display: none;
         }
         .logoybanner {
-            height: 320px;
+            
                 .slgn {
                     font-size: 30px;
                 }
         
             }
         }
+        .
     
     .sec_elementos {
         margin-bottom: 10px;
@@ -35,12 +36,13 @@
         height: 700px;
         font-size: small;
         width: 30%;
-        .imagen-planta {
-            width: 20%
-        }
+
+            /*.imagen-planta {
+                width: 20%
+            } */
     }
     .info {
-       width: 60%; 
+       width: 40%; 
     }
     .nombre_planta {
         width: 20%;
@@ -68,7 +70,8 @@
         display: none;
     }
     .tarjeta_cuidados {
-        height: 700px;
+
+        
     }
 
 }
@@ -76,7 +79,5 @@
 /* plantas */
 
 @media only screen and (max-width: 578px) {
-    .main .logoybanner {
-        height: 199px;
-    }
+
 } 

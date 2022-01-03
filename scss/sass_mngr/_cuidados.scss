@@ -36,14 +36,15 @@
             
 
             .foto_planta {
-                width: 100%;
+               width: 100%;
+               align-self: center;
+               
             }
         }
 
         .datos_planta {
             @extend %flextend;
-            width: 70%;
-            height: 30px;
+            width: 65%;
                 
                 .info {
                     @extend %flextend;
